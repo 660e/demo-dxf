@@ -2,10 +2,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style></style>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+      }
+      #section {
+        border: 1px #f00 solid;
+        height: 700px;
+      }
+      #section > div {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #file {
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    dxf
+    <section id="section">
+      <div>点击上传dxf文件</div>
+    </section>
+    <input id="file" type="file" />
+
     <script src="../node_modules/dxf/dist/dxf.js"></script>
     <script src="./dxf.js"></script>
   </body>
